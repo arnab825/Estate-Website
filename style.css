@@ -7,7 +7,7 @@
 
 .navigation-menu{
  
-  color: white;
+  color: rgb(14, 13, 13);
   
   padding: 5px;
   display: flex;
@@ -23,7 +23,7 @@
 .navBar-menu {
   display: flex;
   flex-direction: column;
-  background-color: #444;
+  background-color: #ffffff;
   position: absolute;
   top: 50px;
   right: 10px;
@@ -32,13 +32,17 @@
 
 .navBar-menu a {
   padding: 10px;
-  color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+  /* border-bottom: 1px solid #555; */
 }
 
 .navBar-menu a:hover {
-  background-color: #555;
+  /* background-color: #555; */
+  border-bottom: 1px solid #090909; 
 }
 
 .hide {
@@ -46,7 +50,7 @@
 }
 
 /* Responsive adjustments */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   nav {
       height: auto;
   }
