@@ -35,3 +35,45 @@ document.addEventListener('DOMContentLoaded', function() {
     animateValue("awards", 0, 20, 2000);
 
 });
+
+
+// Popup functionality
+const contactForm = document.getElementById('contactForm');
+const contactModal = document.getElementById('contactModal');
+const closeModal = document.getElementById('closeModal');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault(); // Prevent form from submitting
+
+  // Create form data object
+  const formData = new FormData(contactForm);
+
+  // Send form data to the server using Fetch
+  fetch('submit_form.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'success') {
+      // Set modal content
+      document.getElementById('modalName').textContent = data.name;
+      document.getElementById('modalEmail').textContent = data.email;
+      document.getElementById('modalMessage').textContent = data.message;
+
+      // Show modal
+      contactModal.classList.remove('hidden');
+    } else {
+      alert('Error: ' + data.message);
+    }
+  })
+  .catch(error => {
+    alert('There was an error submitting your form. Please try again.');
+  });
+});
+
+// Close modal when 'X' is clicked
+closeModal.addEventListener('click', () => {
+  contactModal.classList.add('hidden');
+});
+
