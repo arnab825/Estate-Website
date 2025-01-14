@@ -2,8 +2,8 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Database connection (update with your credentials)
     $servername = "localhost";
-    $username = "root";
-    $password = "sasa";
+    $username = "if0_38102452";
+    $password = "NaDLhhrzojTNH";
     $dbname = "contact_estate";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
