@@ -15,15 +15,15 @@
       <div class="px-5 max-w-[1200px] mx-auto  text-[#C4C4C4] hidden h-20 items-center justify-between lg:flex cursor-pointer">
         <!--<div class="text-[20px] font-bold  gap-9 ">Logo</div>-->
         <div class="text-[20px] font-bold flex items-center gap-9">
-          <img src="public/logo.png" alt="Logo" class="h-24 w-auto logo-animation">
+          <a href="#"><img src="public/logo.png" alt="Logo" class="h-24 w-auto logo-animation"></a>
         </div>
         <ul class="flex justify-between  items-center gap-20 text-base font-bold text-[#C4C4C4]  ">
           <li class="hover:border-white border-b-2 border-transparent"><a href="#">Home</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Articles</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Services</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Find a Team</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">About Us</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Contact Us</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Services">Services</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Team">Find a Team</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#About Us">About Us</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Articles">Articles</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Contact Us">Contact Us</a></li>
       </div>
        <!--desktop version-->
      </nav>
@@ -39,12 +39,11 @@
           <!-- Add your menu items here -->
            <ul class="p-5 ">
             <li class="hover:border-white border-b-2 border-transparent"><a href="#">Home</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Articles</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Services</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Portfolio</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Find a Team</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">About Us</a></li>
-            <li class="hover:border-white border-b-2 border-transparent"><a href="#">Contact Us</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Services">Services</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Team">Find a Team</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#About Us">About Us</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Articles">Articles</a></li>
+            <li class="hover:border-white border-b-2 border-transparent"><a href="#Contact Us">Contact Us</a></li>
            </ul>
       </div>
   </div>
@@ -63,9 +62,10 @@
           <h1 class="text-xl font-medium md:text-4xl" >We Provide <br>Architectural Design <br>and Construction</h1>
   
           <p class="text-[#C4C4C4] text-base max-w-[35rem]">
-            We provide a global real estate platform, redefining customer engagement with property discovery and investment, focusing on innovation and seamless user experiences.
+            A global real estate platform, redefining customer engagement with property discovery and investment, focusing on innovation and seamless user experiences.
           </p>
-          <button class="self-start text-base font-semibold py-1.5 bg-blue-500 px-3 mt-5 md:py-4 md:px-5 shadow-md shadow-cyan-400">Discover More</button>
+          <button class="self-start text-base font-semibold py-1.5 bg-blue-500 px-3 mt-5 md:py-4 md:px-5 shadow-md shadow-cyan-400" 
+                  onclick="window.location.href='more.html'">Discover More</button>
 
 
          
@@ -176,8 +176,8 @@
 </section>
 <!--Brand Logo end-->
 
-  <!--services start-->
-<section class="p-5 md:bg-[#f8f8f8]">
+  <!--services section start-->
+<section class="p-5 md:bg-[#f8f8f8]" id="Services">
   <div class="p-5 md:max-w-[1200px] md:mx-auto ">
     <div class="flex flex-col gap-2 text-center md:flex-row md:justify-between md:items-end md:mt-20">
       <h2 class="font-bold text-xl md:text-4xl ">Our Excellent Services</h2>
@@ -210,10 +210,7 @@
     </div>
   </div>
 </section>
-<!--services end-->
-
-
-<!--what makes us start-->
+<!--//-->
 <section class="p-5 lg:max-w-[1200px] lg:mx-auto ">
   <div class="flex flex-col gap-2 lg:gap-4">
     <div class="h-1 w-[90px] blue-grad lg:h-2"></div>
@@ -255,11 +252,11 @@
   </div>
   
 </section>
-<!--what makes us end-->
+<!--services section end-->
 
 
-  <!--our teams start-->
-<section class="p-5 md:max-w-[1200px] md:mx-auto flex flex-col lg:flex-row">
+  <!--Find a Team section start-->
+<section class="p-5 md:max-w-[1200px] md:mx-auto flex flex-col lg:flex-row" id="Team">
   <div class="bg-team-bg-image h-[340px] bg-no-repeat bg-cover flex justify-center items-end mb-40 md:flex-1 md:mr-40 md:flex-col md:h-[500px]">
     <div class="black-grad h-[250px] w-[250px] relative top-24 flex flex-col p-5 gap-2 items-center md:top-0 md:-right-24 n">
       <div>
@@ -279,11 +276,11 @@
     </div>
   </div>
 </section>
-<!--our teams end-->
+<!--Find a Team section end-->
 
 
-  <!--our story section start-->
-<section class="p-5 md:max-w-[1200px] md:mx-auto">
+  <!--About Us section start-->
+<section class="p-4 md:max-w-[1200px] md:mx-auto" id="About Us">
   <div class="flex flex-col gap-2 min-w-[16.25rem] md:flex-1 md:flex-row-reverse">
     <div >
       <img src="/Mask Group.png" alt="" class="shadow-md w-full md:max-w-[570px] md:border-8 md:border-white flex-1">
@@ -295,10 +292,10 @@
     </div>
   </div>
 </section>
-<!--our story section end-->
+<!--About Us section end-->
 
-<!--news and update start-->
-<section class="p-5 md:max-w-[1200px] md:mx-auto md:gap-16 md:flex md:flex-col">
+<!--Articles section start-->
+<section class="p-5 md:max-w-[1200px] md:mx-auto md:gap-16 md:flex md:flex-col" id="Articles">
   <h2 class="text-xl font-bold md:text-4xl md:gap-4">News & Updates</h2>
   <div class="flex gap-4 overflow-x-hidden">
     <div class="flex flex-col gap-4 min-w-[14rem] ">
@@ -333,11 +330,11 @@
     </div>
   </div>
 </section>
-<!--news and update end-->         
+<!--Articles section end-->        
 
 
 
-<!--project section start-->
+<!--project section start//-->
 <section class="p-5 flex flex-col gap-8 md:max-w-[1200px] md:mx-auto md:gap-24">
   <h2 class="text-xl font-bold text-[#242527] md:text-4xl">Our collection <br> of best projects</h2>
   <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
@@ -366,10 +363,10 @@
     </picture>
   </div>
 </section>
-<!--project section end-->
+<!--project section end//-->
 
- <!-- Contact Us start -->
-<section class="p-5 flex flex-col gap-8 md:max-w-[1200px] md:mx-auto md:gap-24">
+ <!-- Contact Us section start -->
+<section class="p-5 flex flex-col gap-8 md:max-w-[1200px] md:mx-auto md:gap-24" id="Contact Us">
   <h2 class="text-4xl font-bold text-center md:text-left">Contact Us</h2>
   <form id="contactForm" action="show_form.php" method="post" class="flex flex-col gap-4">
     <div class="flex flex-col gap-4 md:flex-row md:gap-8">
@@ -382,7 +379,7 @@
     <button type="submit" class="self-center bg-[#0A72AD] text-white py-2 px-4 rounded-md shadow-md shadow-cyan-400 hover:bg-blue-600 w-72 border-x-2 transition duration-300 ease-in-out hover:border-blue-500">Submit</button>
   </form>
 </section>
-<!-- Contact Us End -->
+<!-- Contact Us section End -->
 
 <!-- Modal Start-->
 <!-- <div id="successModal" class="hidden fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
@@ -410,7 +407,7 @@
     <div class="flex flex-col lg:flex-row lg:gap-[180px] lg:py-9 lg:max-w-[1200px] mx-auto lg:items-baseline">
       <div class="flex flex-col gap-4 lg:max-w-[550px]">
         <div class="text-[20px] font-bold flex items-center gap-9">
-          <img src="public/logo.png" alt="Logo" class="h-24 w-auto logo-animation">
+          <a href="#"><img src="public/logo.png" alt="Logo" class="h-24 w-auto logo-animation"></a>
         </div>
         <p class="text-base font-semibold">We provide a global platform for customers to explore and invest in properties worldwide with more than 25 years of experience and a focus on innovation and user experience.</p>
         <div class="flex mt-5 gap-2">
@@ -433,6 +430,7 @@
         <!-- More Section -->
         <div>
           <h4 class="text-xl font-bold hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">More</h4>
+          <p class="mt-4 text-md hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">For Investors</p>
           <p class="mt-4 text-md hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">Documentation</p>
           <p class="mt-4 text-md hover:border-b-2 cursor-pointer hover:border-white border-b-2 border-transparent">License</p>
         </div>
