@@ -43,6 +43,7 @@
 .navBar-menu a:hover {
   /* background-color: #555; */
   border-bottom: 1px solid #090909; 
+  transform: translateX(10px);
 }
 
 .hide {
