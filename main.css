@@ -53,6 +53,10 @@
     max-height: 500px; /* Adjust as needed */
   }
 
+ nav a.active {
+    color: #3a6515;
+    font-weight: bold;
+  }
 
 
   /* .hero-text, .hero-description, .hero-button, .hero-image {
@@ -179,3 +183,4 @@ button {
   transform: scale(0.9) translateY(-10px);
   transition: transform 0.3s ease;
 } */
+
